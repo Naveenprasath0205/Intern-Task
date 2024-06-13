@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style1.css">
+    </head>
+    <body onload="load()">
+        <div class="container-login">
+            <button class="pro-btn" onclick="logoutbtnclk()"> LOGOUT</button>
+            <button class="pro-btn" onclick="profilebtnclk()"> PROFILE</button>
+        </div>
+        <div class="container-heading">
+            <h1 id="heading"></h1>
+        </div>
+
+        <div class="container1" id="container-form">
+            <h2>User Information</h2>
+            <div class="form-group1">
+                <h4 class="h-items">Name</h4><span class="space1"></span>-<h4 id="h-name" class="h-name"></h4>
+            </div>
+                <div class="form-group1">
+                    <h4 class="h-items">Age</h4><span class="space2"></span>-<h4 id="h-age" class="h-name"></h4>
+                </div>
+                <div class="form-group1">
+                    <h4 class="h-items">Date of Birth</h4><span class="space3"></span>-<h4 id="h-dob" class="h-name"></h4>
+                    
+                </div>
+                <div class="form-group1">
+                    <h4 class="h-items">Contact</h4><span class="space4"></span>-<h4 id="h-ph" class="h-name"></h4>
+                    
+                </div>
+                <div class="form-group1">
+                    <button id="loginbtn" onclick="openinfobox()">Edit</button>
+                </div>
+        </div>
+
+        <div class="container" id="container-edit">
+            <h2>Update Information</h2>
+                <div class="form-group">
+                    <label for="login-username">Age</label>
+                    <input type="text" id="update-age" name="update-age" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Date of Birth</label>
+                    <input type="text" id="update-dob" name="update-dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Contact</label>
+                    <input type="text" id="update-ph" name="update-ph" required>
+                </div>
+                <div class="form-group">
+                    <button id="updatebtn" onclick="openeditbox()">Update</button>
+                </div>
+        </div>
+
+    </body>
+    <script src="js/profile.js"></script>
+</html>
